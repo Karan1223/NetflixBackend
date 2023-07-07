@@ -26,7 +26,7 @@ mongoose
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.get('/',(req,res) => {
-    console.log("Project is running.")
+    res.send("Project is running.")
 })
 
 app.use("/api/user", userRoutes);
